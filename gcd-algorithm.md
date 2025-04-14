@@ -1,4 +1,4 @@
-Greatest Common Divisor: From actor lists to elegant Python
+Greatest Common Divisor: From Factor lists to elegant Python
 
 Finding the greatest common divisor (GCD) of two integers is a simple but useful problem in mathematics. It’s usually taught in primary school and describes finding the largest whole number that divides into both numbers. Sometimes it is called finding the highest common factor (HCF). It’s also sometimes referred to as Euclid’s algorithm, named after the ancient Greek mathematician, Euclid who lived c300BC. 
 
@@ -17,6 +17,7 @@ Euclid formed an algorithm that can be used to find this largest factor with big
 Mathematically, the difference between these numbers is the same as finding the remainder of dividing the larger number by the smaller number and is called the modulus. In programming, finding the difference repeatedly is equivalent to using the modulus operator % , which gives the remainder after division. If the numbers are not the same and are not zero then the same function is called by itself. This is called a recursive function.
 
 We could write this in Python as follows:
+
 ```python
 def gcd(a: int, b: int)->int:
   #set both of these variables to zero
@@ -44,6 +45,7 @@ def gcd(a: int, b: int)->int:
      #new_number_a
      return new_number_a
 ```
+
 However, this is not a very elegant solution as it is multiple lines and calculations and the same result can be found with a lot fewer operations. 
 You could actually just write the following to do exactly the same thing.
 
@@ -77,4 +79,4 @@ fn gcd(mut a: u32, mut b: u32) -> u32 {
 }
 ``` 
 
-Understanding GCD is foundational for algorithms in modern cryptography, including RSA and modular arithmetic.
+Understanding GCD is foundational for algorithms in modern cryptography. This concept forms the backbone of algorithms such as RSA, where modular arithmetic and prime factors are key.
