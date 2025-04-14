@@ -6,6 +6,7 @@ A simple example would be finding the highest common factor of 28 and 35.
 In primary school, you might list the factors of both of these numbers.
 
 Factors of 28: 1, 2, 4, 7, 14, 28
+
 Factors of 35: 1, 5, 7, 35
 
 So it’s easy to see with a simple example that the largest factor common to both lists is 7.
