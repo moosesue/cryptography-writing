@@ -21,11 +21,8 @@ We could write this in Python as follows:
 
 ```python
 def gcd(a: int, b: int)->int:
-  #set both of these variables to zero
-  new_number_a = 0
-  new_number_b = 0
   #check if either of the numbers passed in is zero
-  if (a !=0) & (b!=0) :
+  if (a !=0) and (b!=0) :
     #check if a is bigger than b
     if a > b:
        #if it is then set new_number_a to be the remainder of a #divided by b and set new_number_b to be b.
