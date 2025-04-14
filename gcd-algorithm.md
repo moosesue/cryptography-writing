@@ -36,7 +36,7 @@ def gcd(a: int, b: int)->int:
   #check if new_number_a is the same as new_number_b and that
   #new_number_b is not zero. If so, call the function again 
   #with the new numbers.
-  if (new_number_a != new_number_b) & (new_number_b!=0):
+  if (new_number_a != new_number_b) and (new_number_b!=0):
      return gcd(new_number_a, new_number_b)
   else:
      #if not then we must be finished and so the result is 
