@@ -11,11 +11,21 @@ Factors of 35: 1, 5, 7, 35
 
 So it’s easy to see with a simple example that the largest factor common to both lists is 7.
 
-Euclid formed an algorithm that can be used to find this largest factor with bigger numbers, when writing out lists might be a bit long and tedious. The basic idea is that the largest factor doesn’t change if you replace the bigger number with the difference between it and the smaller number. This is then repeated this until the numbers are the same. This final number is the largest factor of both numbers. So, in our simple example this becomes:
+Euclid formed an algorithm that can be used to find this largest factor with bigger numbers, when writing out lists might be a bit long and tedious. The basic idea is that the largest factor doesn’t change if you replace the bigger number with the difference between it and the smaller number. This is then repeated this until the numbers are the same. This final number is the largest factor of both numbers. So, in our simple example Euclid's original method is:
 
-35, 28 -> 28,7 -> 7, 21 -> 7, 14 -> 7,7
+35 - 28 = 7
+28 - 7 = 21
+21 - 7 = 14
+14 - 7 = 7
 
-Mathematically, the difference between these numbers is the same as finding the remainder of dividing the larger number by the smaller number and is called the modulus. In programming, finding the difference repeatedly is equivalent to using the modulus operator % , which gives the remainder after division. If the numbers are not the same and are not zero then the same function is called by itself. This is called a recursive function.
+So the GCD is 7.
+
+In programming, finding the difference repeatedly is equivalent to using the modulus operator % , which gives the remainder after division. This is much more efficient and gives the same result.
+
+35 % 28 = 7
+28 % 7 = 0
+
+The remainder is 0 and so the GCD is 7.
 
 We could write this in Python as follows:
 
@@ -44,8 +54,7 @@ def gcd(a: int, b: int)->int:
      return new_number_a
 ```
 
-However, this is not a very elegant solution as it is multiple lines and calculations and the same result can be found with a lot fewer operations. 
-You could actually just write the following to do exactly the same thing.
+However, this is not a very elegant solution as it is multiple lines and calculations and the same result can be found with a lot fewer operations. If the numbers are not the same and are not zero then the same function can be called by itself. This is called a recursive function. You could actually just write the following to do exactly the same thing.
 
 ```python
 def gcd(a,b):return gcd(b%a,a) if a else b
