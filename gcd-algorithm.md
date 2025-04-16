@@ -90,4 +90,14 @@ fn gcd(mut a: u32, mut b: u32) -> u32 {
 }
 ``` 
 
-Understanding GCD is foundational for algorithms in modern cryptography. This concept forms the backbone of algorithms such as RSA, where modular arithmetic and prime factors are key.
+Finding the GCD of two numbers is powerful, but what if we wanted to express the GCD as a combination of those numbers?
+
+For example, what if we wanted to find two numbers x and y such that
+
+$ax + by = \text{GCD}(a, b)$
+
+This is called Bézout’s identity and is the basis for finding modular inverses. A modular inverse (or modular multiplicative inverse) is a number c such that
+
+$a \cdot c \bmod b \equiv 1 $
+
+Understanding this is foundational for algorithms in modern cryptography and forms the backbone of algorithms such as RSA, where modular arithmetic and prime factors are key. 
