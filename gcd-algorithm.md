@@ -94,10 +94,10 @@ Finding the GCD of two numbers is powerful, but what if we wanted to express the
 
 For example, what if we wanted to find two numbers x and y such that
 
-$ax + by = \text{GCD}(a, b)$
+$a \cdot x + b \cdot y = \gcd(a, b)$
 
 This is called Bézout’s identity and is the basis for finding modular inverses. A modular inverse (or modular multiplicative inverse) is a number c such that
 
 $a \cdot c \bmod b \equiv 1 $
 
-Understanding this is foundational for algorithms in modern cryptography and forms the backbone of algorithms such as RSA, where modular arithmetic and prime factors are key. 
+Understanding this is foundational for algorithms in modern cryptography and forms the backbone of algorithms such as RSA, where modular arithmetic and prime factors are key. Look out for my next article on these topics. 
