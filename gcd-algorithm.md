@@ -14,8 +14,11 @@ So it’s easy to see with a simple example that the largest factor common to bo
 Euclid formed an algorithm that can be used to find this largest factor with bigger numbers, when writing out lists might be a bit long and tedious. The basic idea is that the largest factor doesn’t change if you replace the bigger number with the difference between it and the smaller number. This is then repeated this until the numbers are the same. This final number is the largest factor of both numbers. So, in our simple example Euclid's original method is:
 
 35 - 28 = 7
+
 28 - 7 = 21
+
 21 - 7 = 14
+
 14 - 7 = 7
 
 So the GCD is 7.
@@ -23,6 +26,7 @@ So the GCD is 7.
 In programming, finding the difference repeatedly is equivalent to using the modulus operator % , which gives the remainder after division. This is much more efficient and gives the same result.
 
 35 % 28 = 7
+
 28 % 7 = 0
 
 The remainder is 0 and so the GCD is 7.
