@@ -92,7 +92,7 @@ fn gcd(mut a: u32, mut b: u32) -> u32 {
 
 Finding the GCD of two numbers is powerful, but what if we wanted to express the GCD as a combination of those numbers?
 
-For example, what if we wanted to find two numbers x and y such that
+For example, what if we wanted to find two numbers $x$ and $y$ such that
 
 $a \cdot x + b \cdot y = \gcd(a, b)$
 
